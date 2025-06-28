@@ -1,0 +1,15 @@
+[project]
+name = "sparv-sbx-posneg-attitude"
+version = "0.1.0"
+description = "Annotator of object of positive or negative attitude"
+readme = "README.md"
+license.text = "MIT License"
+# authors = [
+#     { name = "Anna Lindahl", email = "anna.lindahl@svenska.gu.se" }
+# ]
+dependencies = [
+    "sparv-pipeline~=5.0",
+    "transformers>=4.51.3",
+    "torch"
+]
+entry-points."sparv.plugin" = { sbx_posneg_attitude= "sbx_posneg_attitude" }
