@@ -1,0 +1,25 @@
+id: "sbx-swe-posneg_attitude-sparv"
+description:
+  swe: "En Sparv-plugin som annoterar positiv och negativ attityd i text, mer specfikt objektet som attityden syftar på. Observera att annoteringarna kan variera i kvalitet."
+  eng: "A Sparv plugin that annotates positive and negative attitude in text, more specifically the object that the attitude is directed toward. Please note that the quality of the annotations may vary."
+short_description:
+  swe: "En Sparv-plugin som annoterar objekt som positiv och negativ attityd riktas mot."
+  eng: "A Sparv plugin which annotates object of positive or negative attitude."
+type: "analysis"
+task: "Attitude annotation"
+plugin_url: https://github.com/spraakbanken/sparv-sbx-posneg-attitude
+analysis_unit: "token"
+models:
+  url: https://huggingface.co/sbx/KB-bert-base-swedish-cased_posneg_attitude
+license: "MIT license"
+annotations:
+  - <token>:sbx_posneg_attitude.attitude
+example_output: |-
+  ```xml
+    <token attitude="O">Jag</token>
+    <token attitude="O">älskar</token>
+    <token attitude="B-POS">glass</token>
+    <token attitude="I-POS">med</token>
+    <token attitude="I-POS">strössel</token>
+    <token attitude="O">.</token>
+  ```
