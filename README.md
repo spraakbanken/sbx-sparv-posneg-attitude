@@ -21,17 +21,17 @@ sparv setup
 
 2. Clone this plugin's repository:  
 ```
-git clone https://github.com/spraakbanken/sparv-sbx-posneg-attitude
+git clone https://github.com/spraakbanken/sbx-sparv-posneg-attitude
 ```
 
 3. Inject the plugin into Sparv:  
 ```
-pipx inject sparv /YOUR/PATH/TO/THE/PLUGIN/sparv-sbx-posneg-attitude
+pipx inject sparv /YOUR/PATH/TO/THE/PLUGIN/sbx-sparv-posneg-attitude
 ```
 
 _In case you need to uninstall the plugin:_  
 ```
-pipx runpip sparv uninstall sparv-sbx-posneg-attitude
+pipx runpip sparv uninstall sbx-sparv-posneg-attitude
 ```
 
 ## Usage
